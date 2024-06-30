@@ -8,21 +8,68 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<button id="openModal">openModal</button>
-  <div class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Modal Header</h2>
-        <button class="close-modal">x</button>
-      </div>
-      <div class="modal-body">
-        <p>Modal Body Content</p>
-      </div>
-    </div>
-  </div>
-    <script type="text/javascript" src="./script.js">
-</script>
+	<button id="openModal">Open Modal</button>
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Modal Header</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Modal Body Content</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js">
+		
+
+	//your JS code here. If required.
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Modal header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Close button */
+.close-modal {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</script>
 </body>
 
 </html>
